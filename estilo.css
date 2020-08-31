@@ -1,0 +1,13 @@
+
+.calculadora{
+border: 3px black ridge;  
+  width:250px;
+  text-align:center;
+  
+}
+
+#textoPantalla{
+  width:20px;
+  brder: 2px black solid;
+  text-align: right;
+}

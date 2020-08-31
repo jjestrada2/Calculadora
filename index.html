@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="C:\Users\user\Desktop\ProyectoCalculadora/estilo.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="C:\Users\user\Desktop\ProyectoCalculadora\src.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="calculadora">
+      <form action="#" name="calculadora" id="calculadora">
+        <p id="textoPantalla">0</p>
+
+        <div
+          class="btn-group btn-sm"
+          style="width: 210px"
+          role="group"
+          aria-label="Basic-example"
+        >
+          <input
+            type="button"
+            class=" btn btn-primary "
+            value="Retr"
+            onclick="retro()"
+          />
+          <input
+            type="button"
+            class=" btn btn-primary "
+            value="CE"
+            onclick="borradoParcial()"
+          />
+          <input
+            type="button"
+            class=" btn btn-primary "
+            value="C"
+            onclick="borradoTotal()"
+          />
+        </div>
+        <p>
+          <input
+            type="button"
+            class="btn btn-outline-dark"
+            value="7"
+            onclick="numero('7')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-dark"
+            value="8"
+            onclick="numero('8')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-dark"
+            value="9"
+            onclick="numero('9')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-danger"
+            value="/"
+            onclick="operar('/')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-danger  btn-sm"
+            value="Raiz"
+            onclick="raizc()"
+          />
+        </p>
+
+        <p>
+          <input
+            type="button"
+            class="btn btn-outline-dark"
+            value="4"
+            onclick="numero('4')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-dark"
+            value="5"
+            onclick="numero('5')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-dark"
+            value="6"
+            onclick="numero('6')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-danger"
+            value="*"
+            onclick="operar('*')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-danger "
+            value="%"
+            onclick="porcent()"
+          />
+        </p>
+
+        <p>
+          <input
+            type="button"
+            class="btn btn-outline-dark"
+            value="1"
+            onclick="numero('1')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-dark"
+            value="2"
+            onclick="numero('2')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-dark"
+            value="3"
+            onclick="numero('3')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-danger"
+            value="-"
+            onclick="operar('-')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-danger btn"
+            value="1/x"
+            onclick="invec()"
+          />
+        </p>
+
+        <p>
+          <input
+            type="button"
+            class="btn btn-outline-dark"
+            value="0"
+            onclick="numero('0')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-danger "
+            value="+/-"
+            onclick="opuest()"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-danger"
+            value="."
+            onclick="numero('.')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-danger"
+            value="+"
+            onclick="operar('+')"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-success"
+            value="="
+            onclick="igualar()"
+          />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
